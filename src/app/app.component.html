@@ -23,6 +23,16 @@
     <div class="col-sm-4">
       <button class="btn btn-danger" (click) = 'clickbot3();' [disabled] = 'valorbtn3'>Boton {{txtBtn3}}</button>
     </div>
+
+    <div class="col-sm-12">
+        <ul *ngFor='let item of items'>
+            <li>{{item}}</li>
+        </ul>
+      <ul *ngFor='let valor of todosValores'>
+          <li>{{valor}}</li>
+      </ul>
+
+    </div>
   </div>
 </div>
 

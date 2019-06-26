@@ -22,6 +22,9 @@ export class AppComponent {
   textoActivar ="Activar btn Saludo";
   textoDesactivar ="Este btn no esta habilitado";
 
+  items = ['Roberto', 'Armando', 'Roger', 'Jaime'];
+  todosValores: Array<string> = ['Roberto', 'Armando', 'Roger', 'Jaime'];
+
   mostrarAviso(){
     alert('Has pulsado el botón!');
   }
