@@ -2,10 +2,30 @@
 <h1>Home</h1>
 
 <div class="container">
-  <a [href]="url" target="blank">Tutorial</a>
-  <a [href]="urlarray[0]" target="blank">Tutorial</a>
+  <a [href]="url" target="blank">Tutorial</a><br>
+  <a [href]="urlarray[0]" target="blank">Tutorial</a><br>
 </div>
 
-<button class="btn btn-primary" onClick='alert("Pulsado boton");' [disabled] = 'valor'>Boton ejemplo</button>
+<button class="btn btn-primary" onClick='alert("Pulsado boton");' [disabled] = 'valorbtn'>Boton ejemplo</button><br>
+<button class="btn btn-primary" (click)='mostrarAviso();' [disabled] = 'valorbtn'>Boton ejemplo</button><br>
+
+<button class="btn btn-primary" onClick='mostrarAviso();' [disabled] = 'valorbtn'>Boton ejemplo</button><br>
+
+<hr>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <button class="btn btn-primary" (click) ='clickbot1();' [disabled] = 'valorbtn1'>Boton {{txtBtn1}}</button>
+    </div>
+    <div class="col-sm-4">
+      <button class="btn btn-success" (click) = 'clickbot2();' [disabled] = 'valorbtn2'>Boton {{txtBtn2}}</button>
+    </div>
+    <div class="col-sm-4">
+      <button class="btn btn-danger" (click) = 'clickbot3();' [disabled] = 'valorbtn3'>Boton {{txtBtn3}}</button>
+    </div>
+  </div>
+</div>
+
+
 
 <router-outlet></router-outlet>
